@@ -15,3 +15,6 @@ test/tmp
 
 # secrets example
 !.env.example
+
+# useless folder
+.vscode
