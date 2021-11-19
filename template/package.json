@@ -1,0 +1,45 @@
+{
+    "version": "0.0.0",
+    "name": "name_here",
+    "description": "description",
+    "author": "author_here",
+    "homepage": "https://github.com/username/repo_name",
+    "repository": "username/repo_name",
+    "license": "ISC",
+    "main": "lib/index",
+    "bin": "bin/bin_name",
+    "keywords": [
+        "keyword_name"
+    ],
+    "engines": {
+        "node": ">=0.10"
+    },
+    "files": [
+        "bin",
+        "docs",
+        "lib"
+    ],
+    "bugs": {
+        "url": "https://github.com/username/repo_name/issues"
+    },
+    "scripts": {
+        "pretest": "standard && echint",
+        "test": "mocha",
+        "posttest": "npm run coverage",
+        "coverage": "istanbul cover --dir coverage _mocha -- -R dot",
+        "codeclimate": "codeclimate < coverage/lcov.info"
+    },
+    "devDependencies": {
+        "codeclimate-test-reporter": "*",
+        "echint": "*",
+        "istanbul": "*",
+        "mocha": "*",
+        "should": "*",
+        "standard": "*"
+    },
+    "dependencies": {
+        "commander": "*",
+        "debug-log": "*",
+        "dotenv": "*"
+    }
+}

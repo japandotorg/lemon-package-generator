@@ -1,0 +1,17 @@
+# editor config file
+.editorconfig
+
+# secrets
+.env*
+
+# jshint file
+.jshintrc
+
+# travis cli
+.travis.yml
+
+# coverage
+coverage
+
+# test files
+test

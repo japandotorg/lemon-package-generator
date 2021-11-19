@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+'use strict'
+
+var cmd = require('commander')
+var debug = require('debug-log')('comp_name')
+var pkg = require('../package')
+/* comp = componenet */
+var comp_name = require('../lib')
+
+cmd
+    .version(pkg.version)
+    .usage('[options]')
+    .parse(process.argv)
+
+if (!cmd.args.length) {
+    cmd.help()
+}
+
+comp_name()

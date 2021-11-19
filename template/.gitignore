@@ -1,0 +1,17 @@
+# logs
+*.log
+
+# secrets
+.env*
+
+# coverage
+coverage
+
+# node_modules
+node_modules
+
+# test template
+test/tmp
+
+# secrets example
+!.env.example
