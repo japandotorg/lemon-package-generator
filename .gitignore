@@ -17,4 +17,4 @@ test/tmp
 !.env.example
 
 # useless folder
-.vscode
+/.vscode
